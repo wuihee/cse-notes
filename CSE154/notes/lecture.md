@@ -1,6 +1,6 @@
 # Lecture Notes
 
-## Lecture 1 (27 Mar)
+## Lecture 2 (27 Mar)
 
 - Hyper Text Markup Language (HTML)
 - HTML Element: Open Tag + Closed Tag
@@ -37,13 +37,13 @@
 
 ```html
 <ol>
-    <li>First item.</li>
-    <li>Second item.</li>
-    <li>Third item.</li>
+  <li>First item.</li>
+  <li>Second item.</li>
+  <li>Third item.</li>
 </ol>
 ```
 
-## Mar 29
+## Lecture 3 (29 Mar)
 
 ### Nested Lists
 
@@ -57,6 +57,7 @@
       <li>Item 2</li>
     </ol>
   </li>
+</ol>
 ```
 
 ### Block and Inline Elements
@@ -88,7 +89,7 @@
 - Including a CSS style sheet.
 
 ```html
-<link href="filename" rel="stylesheet">
+<link href="filename" rel="stylesheet" />
 ```
 
 - **Selectors**: Designate which elements the styles apply to.
@@ -105,7 +106,8 @@ p {
 - Group selectors:
 
 ```css
-p, li {
+p,
+li {
   color: red;
 }
 ```
@@ -125,5 +127,100 @@ p, li {
 ```css
 .demo {
   color: green;
+}
+```
+
+## Lecture 4 (1 Apr)
+
+- **The Document Object Model (DOM)**: Describes the hierarchy of a webpage - how tags are ranked (i.e. nested).
+
+### Selector Combinations
+
+#### Descendent Combinator
+
+- **Format**: `A B`
+- **Definition**: Select all `B` nested inside `A`.
+
+```css
+div p {
+  color: red;
+}
+
+#test p {
+  color: blue;
+}
+```
+
+#### Child Combinator
+
+- **Format**: `A > B`
+- **Definition**: Select all `B` that are only direct children of `A`.
+
+```css
+div > p {
+  color: blue;
+}
+```
+
+#### Adjacent Siblings
+
+- **Format**: `A + B`
+- **Definition**: Select one instance of `B` only if it immediately follows `A` and both share a parent.
+
+```css
+img + p {
+  font-weight: bold;
+}
+```
+
+#### General Siblings
+
+- **Format**: `A ~ B`
+- **Definition**: Select all instances of `B` that follow `A` (not necessarily immediately), where `A` and `B` share a parent.
+
+```css
+img ~ p {
+  color: red;
+}
+```
+
+### Style Conflicts
+
+- Different rulesets with different properties will "cascade".
+
+```css
+p {
+  color: red;
+}
+
+p {
+  font-weight: bold;
+}
+```
+
+- If the same rulesets are used the latter will so overwrite the former.
+
+```css
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+```
+
+- Styles can be inherited from parents.
+- However, selectors with higher *selector specificity* will override those with lower. However, this is only considered when we have conflicting selectors for the same element.
+- Selector specificity ranking: inline > id > class > element.
+
+```css
+/* p tag with id=text will be color blue. */
+#text {
+  color: blue;
+}
+
+p {
+  color: red;
 }
 ```
