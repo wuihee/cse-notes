@@ -41,4 +41,44 @@ $\Theta(g(n))=\{f(n):$ there exists  constants $c_1,c_2,n_0$ such that $0\le c_1
 - More practically, we define the *ordering relation* using the `compareTo` method in Java.
 - **Stability**: If sorting is stable, it always maintains the same order of elements. This can be tricky to ensure when we are sorting complicated objects.
 
+### Selection Sort
+
+- **Iterative Improvement Invariant**: Keep the left half of the array sorted, and at each iteration we increase the number of sorted elements by one until the entire array is sorted.
+- **Algorithm**: Starting from the 0-index position, find the smallest element in the array and put it in the front. Keep doing this until the array is sorted.
+- **Time Complexity**: $\Theta(n^2)$.
+- **Best Case Runtime**: $\Theta(n^2)$.
+- **In-Practice Runtime**: $\Theta(n^2)$.
+- **Stable?**: No
+- **In-Place?**: Yes
+
+### Insertion Sort
+
+- Maintains *Iterative improvemenet invariant*.
+- **Algorithm**: Starting from index-0, insert current element in it's correct sorted position in the left-half of the array, and keep doing this until the array is sorted.
+- **Time Complexity**: $\Theta(n^2)$.
+- **Best Case Runtime**: $\Theta(n)$.
+- **In-Practice Runtime**: $\Theta(n^2)$.
+- **Stable?**: Yes
+- **In-Place?**: Yes
+
+### Selection vs Insertion Sort
+
+- Insertion sort is preferred because it is stable and has a better best-case runtime.
+- This is because selection sort, regardless of the state of the array, needs to always loop through the remaining right-half of the array to find the next smallest element.
+- In contrast, insertion sort works on inserting the *current* element, which in some cases is already in its correct position.
+
 ## Merge Sort
+
+### Binary Search
+
+- **Recurrence Relation**: $T(N) = T(N/2)+1$
+- **Runtime**: $\Theta(\log N)$
+
+### Recursive Merge Sort
+
+- **Algorithm**:
+  - **Base Case**: If size of array $n=1$, return single element.
+  - Recursively sort left and right halves.
+  - Merge the two halves.
+- **Recurrence Relation**: $T(N) = 2T(N/2)+N$
+- **Time Complexity**: $O(n\log n)$ (linearithmic)
