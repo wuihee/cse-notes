@@ -39,7 +39,7 @@ $\Theta(g(n))=\{f(n):$ there exists  constants $c_1,c_2,n_0$ such that $0\le c_1
   - **Law of Transivity**: If $a<b$ and $b<c$, then $a<c$.
 - A **sort**, therefore is an arrangement of elements that follow the *ordering relation*.
 - More practically, we define the *ordering relation* using the `compareTo` method in Java.
-- **Stability**: If sorting is stable, it always maintains the same order of elements. This can be tricky to ensure when we are sorting complicated objects.
+- **Stability**: Given 2 elements $R$ and $S$ with equal values, if a sorting algorithm is stable, $R$ and $S$ will appear in the same order in which they were originally in.
 
 ### Selection Sort
 
@@ -66,6 +66,7 @@ $\Theta(g(n))=\{f(n):$ there exists  constants $c_1,c_2,n_0$ such that $0\le c_1
 - Insertion sort is preferred because it is stable and has a better best-case runtime.
 - This is because selection sort, regardless of the state of the array, needs to always loop through the remaining right-half of the array to find the next smallest element.
 - In contrast, insertion sort works on inserting the *current* element, which in some cases is already in its correct position.
+- Also, selection sort isn't stable because it relies on swapping the current element with the next smallest element which could mess up the relative order of elements.
 
 ## Merge Sort
 
