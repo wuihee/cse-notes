@@ -27,3 +27,8 @@
 
 - Rundown of Project 1 Deques.
 - Asymptotic analysis review.
+
+## Lecture 4 (3 Apr)
+
+- **Selection Sort**: *Select* smallest element from unsorted, right-half of the array and swap it with the current index.
+- **Insertion Sort**: *Insert* the current element in its correct position on the left side of the sorted array.
