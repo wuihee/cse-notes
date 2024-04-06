@@ -32,3 +32,24 @@
 
 - **Selection Sort**: *Select* smallest element from unsorted, right-half of the array and swap it with the current index.
 - **Insertion Sort**: *Insert* the current element in its correct position on the left side of the sorted array.
+
+## Lecture 5 (5 Apr)
+
+- When coming up with a reccurence relation, create it on how the problem reduces, *not* how the code is structure.
+
+```java
+static void g(int goal, int step) {
+    if (step > goal) {
+        return;
+    }
+    for (int i = 0; i < goal; i += step) {
+        System.out.println(i + " ");
+    }
+    System.out.println();
+    g(goal, step * 2);
+    g(goal, step * 2);
+}
+```
+
+- Initially, I thought the reccurence was $T(N) = 2T(N) + \frac{N}{2}$. However, when you unroll the recurrence, it is an infinite loop.
+- While it is true that in the code $N$ is passed as a parameter, the work passed down at each level is halved, so the recurrence should be: $T(N) = T(\frac{N}{2}) + N$.
