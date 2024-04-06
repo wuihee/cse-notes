@@ -53,3 +53,9 @@ static void g(int goal, int step) {
 
 - Initially, I thought the reccurence was $T(N) = 2T(N) + \frac{N}{2}$. However, when you unroll the recurrence, it is an infinite loop.
 - While it is true that in the code $N$ is passed as a parameter, the work passed down at each level is halved, so the recurrence should be: $T(N) = T(\frac{N}{2}) + N$.
+
+### Common Partial Sums
+
+- $1 + 2 + 3 + 6 + ... + N = \frac{N^2 + N}{2} \rArr \Theta(N^2)$
+- $1 + 2 + 4 + 8 + ... + N = 2N - 1 \rArr \Theta(N)$
+- $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{N} \approx 2$
