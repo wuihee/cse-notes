@@ -59,3 +59,8 @@ static void g(int goal, int step) {
 - $1 + 2 + 3 + 6 + ... + N = \frac{N^2 + N}{2} \rArr \Theta(N^2)$
 - $1 + 2 + 4 + 8 + ... + N = 2N - 1 \rArr \Theta(N)$
 - $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{N} \approx 2$
+
+## Lecture 6 (4 Apr)
+
+- We can convert an array into a BST by taking the middle element as the middle node.
+- We can delete a node from a BST by swapping nodes from the bottom up.
