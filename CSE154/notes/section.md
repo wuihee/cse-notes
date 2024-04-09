@@ -11,3 +11,10 @@
 - `justify-content: center`: Center children along the main axis.
 - 'align-items: center`: Center items along cross-axis.
 - `flex-wrap: wrap`: Wrap items.
+
+## Apr 9
+
+- `document.querySelector()`
+- `document.querySelectorAll()`
+- `document.getElementById()`
+- `element.addEventListener("click", () => {})`
