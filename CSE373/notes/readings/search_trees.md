@@ -8,3 +8,14 @@
 - The runtime of binary tree methods dpeend on the height of the tree. Therefore, it is important to balance the tree.
   - Best Case: $\Theta(\lg N)$
   - Worst Case: $\Theta(N)$
+
+## Tries
+
+### Ternary Search Trees
+
+### Memory Hierarchy
+
+- We can think of RAM as a giant array where our programs store data.
+- **Reference**: Points to a location in memory.
+- When we create an array, we are carving out one continguous block of memory. This is why array indexing is so fast.
+- However, for linked lists, the nodes in memory aren't contiguous. We store the node value, and the address of the next node.
