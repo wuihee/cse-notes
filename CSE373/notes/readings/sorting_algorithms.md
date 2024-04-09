@@ -1,20 +1,6 @@
-# Reading Notes
+# Sorting Algorithms
 
-## Arrays and Nodes
-
-### Dynamic Arrays
-
-- **Collection**: A container which stores objects called *elements*. Arrays, sets, maps are all examples of a collection in Java.
-- A better implementation of an `ArrayList` would be to keep the size of the underlying array larger, so we don't have to continuously resize it.
-
-### Linked Nodes
-
-- Removing an element in an `ArrayList` is slow because we have to reposition all following elements.
-- To resolve this, we can use linked nodes `Node`, where each node contains a reference to the next node.
-
-## Sorting Algorithms
-
-### Asymptotic Analysis
+## Asymptotic Analysis
 
 - **Experimental Runtime Analysis**: How long the program takes.
 - **Asymptotic Runtime Analysis**: Big-O.
@@ -22,7 +8,7 @@
 - **Case Analysis**: Analyze the runtime based on the best/worst case inputs and how they vary.
 - **Order of Growth**: Given a polynomial function representing the runtime of an algorithm, its order of growth denotes how the time of the algorithm increases as its input increases. It is the term with the highest order.
 
-#### Big-Theta $\Theta$
+### Big-Theta $\Theta$
 
 - We use $\Theta$-notation for *asymptotically tight bounds*.
 - For a given function $g(n)$, we define $\Theta(g(n))$ as the set of functions:
