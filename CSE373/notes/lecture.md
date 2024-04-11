@@ -64,3 +64,17 @@ static void g(int goal, int step) {
 
 - We can convert an array into a BST by taking the middle element as the middle node.
 - We can delete a node from a BST by swapping nodes from the bottom up.
+
+## Lecture 7 (10 Apr)
+
+### Trie
+
+- Data structure used to store words.
+- Each node contains a character and a mapping to all other next nodes. We can use an array to store the next nodes and reference them using the ordinal values of the characters.
+- We can also use an attribute like `isTerm` to signify that a node marks the end of a word.
+
+### Ternary Search Tree
+
+- **Middle**: Middle node has character that we want.
+- **Left**: Character we want is less than middle node.
+- **Right**: Character we want is greater than middle node.
