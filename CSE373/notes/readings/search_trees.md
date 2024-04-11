@@ -27,3 +27,17 @@
 - In addition, when we access an array index, the CPU will store the nearby data in the cache, making array operations much faster given that data in an array is stored continguously.
 - **Spatial Locality**: The tendency for programs to access memory stored near each other.
 - **Temporal Locality**: The tendency for programs to access recently accessed data.
+
+## 2-3 Trees
+
+### Binary Search Tree Limitations
+
+- **Average Depth**: If $N$ distinct keys are inserted into a BST, the average depth is $\Theta(\lg N)$.
+- **Tree Height**: If $N$ distinct keys are inserted in random order, the expected tree height is about $4.311 \lg N$ [(Reed, 2003)](https://dl.acm.org/doi/pdf/10.1145/765568.765571).
+- However, in the real-world, we can't guarantee random insertions, as such, our trees may become inbalanced and our operations no longer take $\Theta(\lg N)$ time.
+
+## 2-3 Tree
+
+- To keep BSTs from becoming imbalanced, we can use 2-3 trees to prevent the insertion of new list nodes.
+- To add a new node, we combine them with existing list nodes.
+- When the list nodes get to 3 elements large, we take the middle one and split it off, moving it up.
