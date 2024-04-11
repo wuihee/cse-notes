@@ -12,3 +12,12 @@
 - $O(N)$ describes the runtime, while the asymptotic variable $N$ represents the algorithms input as it goes to infinity.
 - An abstract data type (ADT) is an interface which describes what methods a data type should have.
 - A data structure is the specific implementation of the ADT.
+
+## Section 3 (11 Apr)
+
+- Trie vs TST
+
+|            |  Trie  |    TST     |
+| ---------- | ------ | ---------- |
+| Max Height | $O(L)$ | $O(L + N)$ |
+| Invariant | 3 Children | List of children |
