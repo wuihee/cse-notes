@@ -7,3 +7,4 @@
 - [Lecture 6: JavaScript](./lecture_6.md)
 - [Lecture 7: The DOM and Events](./lecture_7.md)
 - [Lecutre 8: DOM Manipulation](./lecture_8.md)
+- [Lecture 9: Anonymous Functions](./lecture_9.md)
