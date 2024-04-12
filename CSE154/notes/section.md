@@ -18,3 +18,14 @@
 - `document.querySelectorAll()`
 - `document.getElementById()`
 - `element.addEventListener("click", () => {})`
+
+## Apr 11
+
+- `addEventListener()`
+- `removeEventListener()`
+- `element.classList.add()`
+- `element.classList.remove()`
+- `element.classList.contains()`
+- `parseInte()`
+- `event.currentTarget`: Retrieves the element of the event.
+- `element.textContent`: Get the text of the element.
