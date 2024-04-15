@@ -78,3 +78,7 @@ static void g(int goal, int step) {
 - **Middle**: Middle node has character that we want.
 - **Left**: Character we want is less than middle node.
 - **Right**: Character we want is greater than middle node.
+
+## Lecture 8 (12 Apr)
+
+- Inserting into 2-3 trees maintains balance by splitting off from leaves.
