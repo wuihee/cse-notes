@@ -18,7 +18,9 @@
 ### One-to-One Correspondence and Isomorphism
 
 - Instead of directly implementing a 2-3 tree, we using a *left-leaning red-black tree* which achieves the same effect.
-- Red edges represent when two nodes are merged.
-- Whenever we have a right-leaning red edge, we rotate left the node so it becomes left-leaning.
-- When we have two consecutive left-leaning red edges, we rotate right.
-- When a node has 2 red nodes, this means that we have a 3-node in our 2-3 tree and we need to split. We indicate splitting by flipping the colors of our red-black tree edges.
+- **Isomorphism**: Both 2-3 trees and red-black trees are *structurally the same*.
+  - Red edges represent when two nodes are merged.
+  - Whenever we have a right-leaning red edge, we rotate left the node so it becomes left-leaning.
+  - When we have two consecutive left-leaning red edges, we rotate right.
+  - When a node has 2 red nodes, this means that we have a 3-node in our 2-3 tree and we need to split. We indicate splitting by flipping the colors of our red-black tree edges.
+- **Bijection**: Every node in a 2-3 tree has a one-to-one mapping to the red-black tree.

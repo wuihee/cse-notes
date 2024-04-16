@@ -82,3 +82,7 @@ static void g(int goal, int step) {
 ## Lecture 8 (12 Apr)
 
 - Inserting into 2-3 trees maintains balance by splitting off from leaves.
+
+## Lecuture 9
+
+- 2-3 trees are *isomorphic* to red-black trees.
