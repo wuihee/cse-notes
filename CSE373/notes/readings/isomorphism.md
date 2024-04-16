@@ -24,3 +24,9 @@
   - When we have two consecutive left-leaning red edges, we rotate right.
   - When a node has 2 red nodes, this means that we have a 3-node in our 2-3 tree and we need to split. We indicate splitting by flipping the colors of our red-black tree edges.
 - **Bijection**: Every node in a 2-3 tree has a one-to-one mapping to the red-black tree.
+
+## Quicksort
+
+- Quicksort works by selecting a *pivot* element, partitioning all elements less than to the left, and all elements greater than to the right.
+- After partitioning, quicksort recursively repeats this on the left and right subarrays until sorted.
+- Dual-pivot quicksort uses 2 pivot elements, where the elements between the pivots have equal value.
