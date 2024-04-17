@@ -29,3 +29,9 @@
 - `parseInte()`
 - `event.currentTarget`: Retrieves the element of the event.
 - `element.textContent`: Get the text of the element.
+
+## Apr 16
+
+- In a normal function `this` returns `window`.
+- In an event listener on a button, `this` returns the button.
+- In an anonymous arrow function even listener on a button, `this` returns `window`.
