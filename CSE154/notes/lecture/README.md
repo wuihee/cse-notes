@@ -9,3 +9,4 @@
 - [Lecutre 8: DOM Manipulation](./lecture_8.md)
 - [Lecture 9: Anonymous Functions](./lecture_9.md)
 - [Lecture 10: Creating, Adding, and (Re)Moving DOM Elements](./lecture_10.md)
+- [Lecture 11: Timers](./lecture_11.md)

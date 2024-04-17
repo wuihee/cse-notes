@@ -2,5 +2,5 @@
 
 ## Notes
 
-- [Lecture Notes](./notes/lecture.md)
+- [Lecture Notes](./notes/lecture)
 - [Section Notes](./notes/section.md)
