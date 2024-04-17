@@ -86,3 +86,11 @@ static void g(int goal, int step) {
 ## Lecuture 9
 
 - 2-3 trees are *isomorphic* to red-black trees.
+
+## Lecture 10
+
+- Quicksort is isomorphic to BSTs.
+- Runtime Analysis
+  - **Best Case**: $\Theta(N\ln N)$; Random array.
+  - **Worst Case**: $\Theta(N^2)$; Sorted array.
+- If we always pick the leftmost element as our pivot $p$, we can make quicksort stable by ensuring that elements to the left are less than $p$, and elements to the right are greater or equal to $p$.
