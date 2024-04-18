@@ -21,3 +21,16 @@
 | ---------- | ------ | ---------- |
 | Max Height | $O(L)$ | $O(L + N)$ |
 | Invariant | 3 Children | List of children |
+
+## Section 4
+
+- LLRB trees and 2-3 trees are isomorphic, i.e. structurally similar.
+- LLRB Invariants
+  - Left children less than current node.
+  - Right children more than current node.
+  - No node has 2 red links, including the parent link.
+  - Red links all left leaning.
+  - Every path from root to leaf node has same number of black links.
+- When we "flip", we need to flip all connected nodes to properly simulate the popping up of nodes.
+- When we rotate, we need rotate the top most node?
+- When we want to query the top keys from a TST or trie, we can use a priority queue.
