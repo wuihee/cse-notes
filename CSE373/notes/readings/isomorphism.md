@@ -30,3 +30,22 @@
 - Quicksort works by selecting a *pivot* element, partitioning all elements less than to the left, and all elements greater than to the right.
 - After partitioning, quicksort recursively repeats this on the left and right subarrays until sorted.
 - Dual-pivot quicksort uses 2 pivot elements, where the elements between the pivots have equal value.
+
+## Counting Sorts
+
+### Comparison Sorts
+
+- Comparison sorting algorithms in the worst case need about $\log N!$ comparisons to determine the correct order of elements. Stirling's approximation can be used to show that $\lg N! \in \Theta(N\lg N)$.
+
+### Counting Sorts & Enumeration
+
+- **Counting Sort**: Uses *enumeration* instead of *comparisons* to sort elements.
+- First, counting sort calculates the frequency of each element, and then lists them out in sorted order.
+
+### Radix Sorts
+
+- Counting works well with small integer values. How do we address sorting elements such as strings with multiple values (e.g. "a", "aa", "ab")?
+- **Radix Sort**: Divides elements like strings into individual subunits that can be sorted.
+  - **Most-Significant Digit (MSD)**: Starts from left-most character to the right.
+  - **Least-Significant Digit (LSD)**: Starts from the right-most character to the left.
+- **3-Way Radix Quicksort**: Combines radix sort and quicksort.
