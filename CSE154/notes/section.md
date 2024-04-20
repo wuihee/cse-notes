@@ -38,6 +38,23 @@
 
 ## Apr 18
 
+- `setInterval(callback, time)`: Repeated calls.
+- `setTimeout(callback, time)`: Single delay.
+- `clearInterval(timerId)`
+
+```javascript
+const START = 3;
+function timeout() {
+    let delay = 1000;
+    for (let i = START; i > 0; i--) {
+        setTimeout(console.log, delay, i);
+        delay += 1000;
+    }
+    setTimeout(console.log, delay, "Go!");
+}
+```
+
+- How can you call a variable before it's been defined???
 - **Hoisting**: JavaScript initializes these lines of code first. This means we can access these variables/functions before they are declared.
 
 ```javascript
