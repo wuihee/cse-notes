@@ -35,3 +35,23 @@
 - In a normal function `this` returns `window`.
 - In an event listener on a button, `this` returns the button.
 - In an anonymous arrow function even listener on a button, `this` returns `window`.
+
+## Apr 18
+
+- **Hoisting**: JavaScript initializes these lines of code first. This means we can access these variables/functions before they are declared.
+
+```javascript
+console.log(square(5)); // We can use 'square' before it is defined because of hoisting.
+
+function square(x) {
+    return x * x;
+}
+```
+
+- **Temporal Dead Zone**: Variables declared with `let` and `const` are in scope but not yet initialized and cannot be accessed.
+
+```javascript
+console.log(a); // ReferenceError: TDZ for a.
+let a = 3; // End of TDZ for a.
+console.log(a);
+```
