@@ -72,3 +72,8 @@ console.log(a); // ReferenceError: TDZ for a.
 let a = 3; // End of TDZ for a.
 console.log(a);
 ```
+
+## 23 Apr
+
+- Promises are resolved or rejected.
+- To create a promise, we must pass it an executor function as an argument, which in turn takes two arguments - `resolve` and `reject`, which are called when the promise is resolved or rejected respectively.
