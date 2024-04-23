@@ -94,3 +94,13 @@ static void g(int goal, int step) {
   - **Best Case**: $\Theta(N\ln N)$; Random array.
   - **Worst Case**: $\Theta(N^2)$; Sorted array.
 - If we always pick the leftmost element as our pivot $p$, we can make quicksort stable by ensuring that elements to the left are less than $p$, and elements to the right are greater or equal to $p$.
+
+## Lecture 12
+
+- **Binary Heap**: Binary tree data structure where for each node is greater/less or equal than the current node's value depending on whether our heap is a min-heap or max-heap. A binary heap is also a *complete search tree*.
+- Removing from a priority queue requires swapping the root node with the right most leaf, removing the leaf, and "sinking" the node down to its correct position.
+- Inserting into a priority queue involves first placing the node at the right most empty leaf position, then "swimming" up to where it belongs.
+- A heap is represented using an array starting at index 1:
+  - Left Child: $i * 2$
+  - Right Child: $i * 2 + 1$
+  - Parent: $\frac{i}{2}$
