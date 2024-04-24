@@ -1,0 +1,9 @@
+red/blue
+yellow/green
+END:Froot Loops
+END:Raisin Bran
+purple/orange
+END:Frosted Flakes
+black/white
+END:Rice Krispies
+END:Fruity Pebbles
