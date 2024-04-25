@@ -3,4 +3,4 @@
 ## Notes
 
 - [Lecture Notes](./notes/lecture)
-- [Section Notes](./notes/section.md)
+- [Section Notes](./notes/section)
