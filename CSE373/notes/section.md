@@ -34,3 +34,15 @@
 - When we "flip", we need to flip all connected nodes to properly simulate the popping up of nodes.
 - When we rotate, we need rotate the top most node?
 - When we want to query the top keys from a TST or trie, we can use a priority queue.
+
+## Section 5
+
+### Binary Heap
+
+- **Methods**: `peek()`, `add()`, `remove()`.
+- **Insertion**: Remember to sink to the side which the greatest/least value.
+- **Invariant**: Heap Invariant, Binary Tree Invariant, Complete Tree Invariant
+
+### Hash Tables
+
+- When iterating over a hash table, the order of elements depend on the implementation and does not follow the insertion order.
