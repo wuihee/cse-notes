@@ -86,12 +86,12 @@ console.log(a);
 - `async` / `await` with requests.
 
 ```javascript
-function makeRequest() {
+async function makeRequest() {
     const URL = "https://...";
     try {
         let response = await fetch(URL);
         let json = await response.json();
-        console.log(json);
+        return json;
     } catch (error) {
         console.log(error);
     }
