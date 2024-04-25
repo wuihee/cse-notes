@@ -77,3 +77,23 @@ console.log(a);
 
 - Promises are resolved or rejected.
 - To create a promise, we must pass it an executor function as an argument, which in turn takes two arguments - `resolve` and `reject`, which are called when the promise is resolved or rejected respectively.
+
+## Section 10
+
+- Objects and JSON
+- **AJAX**: The use of *requests* to communicate with servers through the internet.
+- Promise Pipeline
+- `async` / `await` with requests.
+
+```javascript
+function makeRequest() {
+    const URL = "https://...";
+    try {
+        let response = await fetch(URL);
+        let json = await response.json();
+        console.log(json);
+    } catch (error) {
+        console.log(error);
+    }
+}
+```
