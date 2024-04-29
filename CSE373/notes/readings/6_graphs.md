@@ -4,6 +4,10 @@
 
 - Graphs help to represent relationships between data.
 - Trees are a special type of graph, with additional constraints.
+- $V$ is the set of all vertices in the graph.
+- $E$ is the set of all edges in the graph.
+- $|V|$ or $n$ is the number of vertices.
+- $|E|$ or $m$ is the number of edges.
 
 ### Vertex
 
