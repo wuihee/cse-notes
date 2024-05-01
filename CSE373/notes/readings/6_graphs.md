@@ -62,3 +62,30 @@ public interface DirectedGraph<V> {
 
 - The *adjacency list* is a data structure for implementing undirected / directed graphs. Each vertex is associated with a list of adjacent vertices it's connected to.
 - An *adjacency matrix* or *edge set* are two other common data structures that can be used to represent graphs.
+
+## Graph Traversals
+
+### Connectivity Problem
+
+- How do we check if any two nodes are connected?
+
+### Depth First Search (DFS)
+
+- Recursively search all elements in the graph.
+- Keep track of visited nodes to prevent infinite loops.
+
+```java
+public boolean connected(Vertex s, Vertex t) {
+    if (s == t) {
+        return true;
+    } else {
+        visited.add(s);
+        for (Vertex n : s.neighbors()) {
+            if (!visited.contains(n) && connected(n, t)) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+```
