@@ -1,4 +1,4 @@
-# Graphs
+# Graph Data Type
 
 ## Runtime of Printing Edges
 
