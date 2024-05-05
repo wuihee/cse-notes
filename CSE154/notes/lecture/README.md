@@ -13,3 +13,4 @@
 - [Lecture 13: APIs, Data & Fetch](./lecture_13.md)
 - [Lecture 15: then/catch](./lecture_15.md)
 - [Lecture 16: More with then/catch & async/await](./lecture_16.md)
+- [Lecture 18: Introduction to Node.js](./lecture_18.md)
