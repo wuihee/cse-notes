@@ -3,7 +3,6 @@
 ## Ports
 
 - *IP addresses* are like the address of your apartment, while *ports* are doors to the homes in the building.
-- Where are env variables stored?
 
 ```javascript
 const PORT = process.env.PORT || 8000;
