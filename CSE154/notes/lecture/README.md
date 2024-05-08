@@ -15,3 +15,4 @@
 - [Lecture 16: More with then/catch & async/await](./lecture_16.md)
 - [Lecture 18: Introduction to Node.js](./lecture_18.md)
 - [Lecture 19: More Node.js](./lecture_19.md)
+- [Lecture 20: Errors, Post & Full Stack](./lecture_20.md)
