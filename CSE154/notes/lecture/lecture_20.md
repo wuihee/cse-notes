@@ -7,6 +7,7 @@
 
 ```javascript
 app.get("/getItems/:category", (req, res) => {
+    let category = req.params.category;
     res.type("text");
     if (category === "") {
         res.status(400).send("Category is required.");
