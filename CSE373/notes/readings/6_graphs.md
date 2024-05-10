@@ -89,3 +89,23 @@ public boolean connected(Vertex s, Vertex t) {
     return false;
 }
 ```
+
+## Shortest Path Trees
+
+### Unweighted Shortest Paths Problem
+
+1. **Single-Pair Shortest Paths**: Shortest path from source vertex $s$ to target $t$.
+2. **Single-Source Shortest Paths**: Shortest path from source vertex $s$ to all other vertices.
+3. **Multiple-Source Shortest Paths**: The shortest path from any source in a given set of vertices $S$ to all other vertices.
+
+### Weighted Shortest Paths Problem
+
+- Same idea as the unweighted shortest paths problem except our edges now have weights and we want to find the shortest path in terms of minimizing our cost.
+
+### Dijkstra's Algorithm
+
+- Keep track of an array `distances` where `distances[i]` is the cost from `source` to node `i`. We initialize `distances[source] = 0` and set all other values to infinity.
+- We also instantiate a set `unvisited` containing all unvisited nodes.
+- Starting at our source, we add the neighbors to a priority queue, ordered by `distances[neighbor]`.
+- We then perform *relaxation* on each neighbors and update the `distances` array.
+- We keep doing this until we have visited all nodes.
