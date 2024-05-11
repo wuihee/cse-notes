@@ -35,7 +35,7 @@ app.get("/data", (req, res) => {
 
 ```javascript
 const express = require("express");
-const app = express;
+const app = express();
 const PORT = 3000;
 
 app.get("/users/:userId", (req, res) => {
